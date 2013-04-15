@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#import "PBCodec.h"
+
 @interface PBHelper : NSObject
+
++ (BOOL) isSimpleType:(ProtoBufType)pbType;
+
++ (ProtoBufType) translatePBTypeFromStr:(NSString *)key;
 
 @end
