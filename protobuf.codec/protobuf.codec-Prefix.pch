@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'protobuf.codec' target in the 'protobuf.codec' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
