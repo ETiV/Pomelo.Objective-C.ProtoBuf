@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		CC3C5029171BED8300BDDC7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3C5028171BED8300BDDC7C /* Foundation.framework */; };
 		CC3C502C171BED8300BDDC7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3C502B171BED8300BDDC7C /* main.m */; };
-		CC3C5030171BED8300BDDC7C /* protobuf_codec.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CC3C502F171BED8300BDDC7C /* protobuf_codec.1 */; };
+		CC3C5038171BEDAD00BDDC7C /* PBCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3C5037171BEDAD00BDDC7C /* PBCodec.m */; };
+		CC3C503B171C4C1600BDDC7C /* PBEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3C503A171C4C1600BDDC7C /* PBEncoder.m */; };
+		CC3C503E171C4C4100BDDC7C /* PBDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3C503D171C4C4100BDDC7C /* PBDecoder.m */; };
+		CC9473BC171C98C2003B3A9F /* PBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9473BB171C98C2003B3A9F /* PBHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +22,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				CC3C5030171BED8300BDDC7C /* protobuf_codec.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -29,8 +31,15 @@
 		CC3C5025171BED8300BDDC7C /* protobuf.codec */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = protobuf.codec; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC3C5028171BED8300BDDC7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CC3C502B171BED8300BDDC7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CC3C502E171BED8300BDDC7C /* protobuf.codec-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "protobuf.codec-Prefix.pch"; sourceTree = "<group>"; };
-		CC3C502F171BED8300BDDC7C /* protobuf_codec.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = protobuf_codec.1; sourceTree = "<group>"; };
+		CC3C5036171BEDAD00BDDC7C /* PBCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBCodec.h; sourceTree = "<group>"; };
+		CC3C5037171BEDAD00BDDC7C /* PBCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBCodec.m; sourceTree = "<group>"; };
+		CC3C5039171C4C1600BDDC7C /* PBEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBEncoder.h; sourceTree = "<group>"; };
+		CC3C503A171C4C1600BDDC7C /* PBEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBEncoder.m; sourceTree = "<group>"; };
+		CC3C503C171C4C4100BDDC7C /* PBDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBDecoder.h; sourceTree = "<group>"; };
+		CC3C503D171C4C4100BDDC7C /* PBDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBDecoder.m; sourceTree = "<group>"; };
+		CC3C503F171C4CB100BDDC7C /* protobuf.codec-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "protobuf.codec-Prefix.pch"; sourceTree = "<group>"; };
+		CC9473BA171C98C2003B3A9F /* PBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBHelper.h; sourceTree = "<group>"; };
+		CC9473BB171C98C2003B3A9F /* PBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				CC3C502B171BED8300BDDC7C /* main.m */,
-				CC3C502F171BED8300BDDC7C /* protobuf_codec.1 */,
+				CC3C5040171C4CE300BDDC7C /* ProtoBuf */,
 				CC3C502D171BED8300BDDC7C /* Supporting Files */,
 			);
 			path = protobuf.codec;
@@ -83,9 +92,24 @@
 		CC3C502D171BED8300BDDC7C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CC3C502E171BED8300BDDC7C /* protobuf.codec-Prefix.pch */,
+				CC3C503F171C4CB100BDDC7C /* protobuf.codec-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC3C5040171C4CE300BDDC7C /* ProtoBuf */ = {
+			isa = PBXGroup;
+			children = (
+				CC3C5036171BEDAD00BDDC7C /* PBCodec.h */,
+				CC3C5039171C4C1600BDDC7C /* PBEncoder.h */,
+				CC3C503C171C4C4100BDDC7C /* PBDecoder.h */,
+				CC3C5037171BEDAD00BDDC7C /* PBCodec.m */,
+				CC3C503A171C4C1600BDDC7C /* PBEncoder.m */,
+				CC3C503D171C4C4100BDDC7C /* PBDecoder.m */,
+				CC9473BA171C98C2003B3A9F /* PBHelper.h */,
+				CC9473BB171C98C2003B3A9F /* PBHelper.m */,
+			);
+			name = ProtoBuf;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +164,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC3C502C171BED8300BDDC7C /* main.m in Sources */,
+				CC3C5038171BEDAD00BDDC7C /* PBCodec.m in Sources */,
+				CC3C503B171C4C1600BDDC7C /* PBEncoder.m in Sources */,
+				CC3C503E171C4C4100BDDC7C /* PBDecoder.m in Sources */,
+				CC9473BC171C98C2003B3A9F /* PBHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +270,7 @@
 				CC3C5035171BED8300BDDC7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
