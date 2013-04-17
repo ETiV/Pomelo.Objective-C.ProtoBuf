@@ -10,7 +10,7 @@
 
 @interface PBEncoder : NSObject
 
-+ (void)loadProtos:(NSDictionary *)protos; // map to MsgEncoder.init
-+ (void)encodeMsg:(NSDictionary *)msg withRoute:(NSString *)route toBuffer:(NSMutableData *)destBuffer; // map to MsgEncoder.encode
++ (void)loadProtos:(NSDictionary *)protos;
++ (void)encodeMsg:(NSDictionary *)msg withRoute:(NSString *)route toBuffer:(NSMutableData *)dest;
 
 @end

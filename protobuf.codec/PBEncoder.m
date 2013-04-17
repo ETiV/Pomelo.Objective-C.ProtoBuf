@@ -10,7 +10,7 @@
 #import "PBCodec.h"
 #import "PBHelper.h"
 
-PBEncoder *_privateEncoder = nil;
+static PBEncoder *_privateEncoder = nil;
 
 @interface PBEncoder (
 private)
@@ -73,8 +73,11 @@ private)
   return [_privateEncoder protos];
 }
 
-
-+ (void)encodeMsg:(NSDictionary *)msg withRoute:(NSString *)route toBuffer:(NSMutableData *)destBuffer {
+#pragma mark - encode
++ (void)encodeMsg:(NSDictionary *)msg withRoute:(NSString *)route toBuffer:(NSMutableData *)dest {
+  if (dest == nil) {
+    dest = [NSMutableData data];
+  }
   // Get protos from protos map use the route as key
   NSDictionary *protos = [[PBEncoder protos] objectForKey:route];
 
@@ -84,23 +87,23 @@ private)
     NSUInteger length = JSON_stringify(msg).length;
 
     //Init buffer and offset
-    NSMutableData *buffer = [[NSMutableData alloc] initWithLength:length];
+    NSMutableData *buffer = [NSMutableData dataWithLength:length];
     NSUInteger offset = 0;
 
     if (protos != nil) {
       offset = [PBEncoder encodeMsg:msg fromOffset:offset withProtos:protos toBuffer:buffer];
       if (offset > 0) {
         // OK
-        if (destBuffer == nil) {
-          destBuffer = [[NSMutableData alloc] initWithLength:offset];
+        if (dest == nil) {
+          dest = [NSMutableData dataWithLength:offset];
         }
-        [destBuffer setData:[buffer subdataWithRange:NSMakeRange(0, offset)]];
+        [dest setData:[buffer subdataWithRange:NSMakeRange(0, offset)]];
         return;
       }
     }
   }
 
-  destBuffer = nil;
+  dest = nil;
 }
 
 
@@ -159,6 +162,9 @@ private)
              fromOffset:(NSUInteger)offset
              withProtos:(NSDictionary *)protos
                toBuffer:(NSMutableData *)dest {
+  if (dest == nil) {
+    dest = [NSMutableData data];
+  }
   NSEnumerator *msgEnum = [msg keyEnumerator];
   id name;
   while ((name = [msgEnum nextObject]) != nil) {
@@ -170,15 +176,15 @@ private)
       NSString *protoTypeStr = [[proto objectForKey:@"type"] stringValue];
       NSUInteger protoTag = [[proto objectForKey:@"tag"] unsignedIntegerValue];
 
-      NSMutableData *_local_buffer_ = [[NSMutableData alloc] initWithLength:0];
+      NSMutableData *_local_buffer_ = [NSMutableData data];
 
       if ([protoOpt isEqualToString:@"required"] || [protoOpt isEqualToString:@"optional"]) {
         [PBEncoder encodeTag:protoTag withPBTypeStr:protoTypeStr toBuffer:_local_buffer_];
         offset = [PBEncoder writeBytes:dest from:offset withData:_local_buffer_];
         offset = [PBEncoder encodeProp:msgName asTypeStr:protoTypeStr andProtos:protos from:offset toBuffer:dest];
       } else if ([protoOpt isEqualToString:@"repeated"]) {
-        // TODO need to test if msgName is instanceOf NSArray
-        if ([msgName count] > 0) {
+        // done TODO need to test if msgName is instanceOf NSArray
+        if ([msgName isKindOfClass:[NSArray class]] && [msgName count] > 0) {
           offset = [PBEncoder encodeArray:msgName
                                 withProto:proto
                                 andProtos:protos
@@ -197,14 +203,16 @@ private)
                andProtos:(NSDictionary *)protos
                     from:(NSUInteger)offset
                 toBuffer:(NSMutableData *)dest {
-
-  NSMutableData *_local_buffer_ = [[NSMutableData alloc] initWithLength:0];
+  if (dest == nil) {
+    dest = [NSMutableData data];
+  }
+  NSMutableData *_local_buffer_ = [NSMutableData data];
 
   if ([typeStr isEqualToString:@"uInt32"]) {
-    [PBCodec encodeUInt32:(uint32_t)[value unsignedIntegerValue] dst:_local_buffer_];
+    [PBCodec encodeUInt32:(uint32_t) [value unsignedIntegerValue] dst:_local_buffer_];
     offset = [PBEncoder writeBytes:dest from:offset withData:_local_buffer_];
   } else if ([typeStr isEqualToString:@"int32"] || [typeStr isEqualToString:@"sInt32"]) {
-    [PBCodec encodeSInt32:(int32_t)[value integerValue] dst:_local_buffer_];
+    [PBCodec encodeSInt32:(int32_t) [value integerValue] dst:_local_buffer_];
     offset = [PBEncoder writeBytes:dest from:offset withData:_local_buffer_];
   } else if ([typeStr isEqualToString:@"float"]) {
     [PBCodec encodeFloat:[value floatValue] dst:_local_buffer_];
@@ -216,7 +224,7 @@ private)
     // value is NSString
     NSUInteger length = [PBCodec byteLength:value];
 
-    [PBCodec encodeUInt32:(uint32_t)length dst:_local_buffer_];
+    [PBCodec encodeUInt32:(uint32_t) length dst:_local_buffer_];
     offset = [PBEncoder writeBytes:dest from:offset withData:_local_buffer_];
 
     [PBCodec encodeStr:value dst:dest from:offset];
@@ -235,7 +243,7 @@ private)
                            toBuffer:_tmp_buffer_];
 
       //Encode length
-      [PBCodec encodeUInt32:(uint32_t)length dst:_local_buffer_];
+      [PBCodec encodeUInt32:(uint32_t) length dst:_local_buffer_];
       offset = [PBEncoder writeBytes:dest from:offset withData:_local_buffer_];
       //contact the object
       [dest replaceBytesInRange:NSMakeRange(offset, length) withBytes:_tmp_buffer_.bytes length:length];
@@ -250,10 +258,13 @@ private)
                 andProtos:(NSDictionary *)protos
                      from:(NSUInteger)offset
                  toBuffer:(NSMutableData *)dest {
+  if (dest == nil) {
+    dest = [NSMutableData data];
+  }
   int i = 0;
   NSString *protoTypeStr = [[proto objectForKey:@"type"] stringValue];
   NSUInteger protoTag = [[proto objectForKey:@"tag"] unsignedIntegerValue];
-  NSMutableData *_local_buffer_ = [[NSMutableData alloc] initWithLength:0];
+  NSMutableData *_local_buffer_ = [NSMutableData data];
 
   if ([PBHelper isSimpleType:[PBHelper translatePBTypeFromStr:protoTypeStr]]) {
     [PBEncoder encodeTag:protoTag withPBTypeStr:protoTypeStr toBuffer:_local_buffer_];
@@ -284,11 +295,13 @@ private)
 }
 
 + (void)encodeTag:(NSUInteger)tag withPBTypeStr:(NSString *)typeStr toBuffer:(NSMutableData *)dest {
+  if (dest == nil) {
+    dest = [NSMutableData data];
+  }
+
   ProtoBufType type = [PBHelper translatePBTypeFromStr:typeStr];
   int value = (type == 0) ? 2 : type;
-  if (dest == nil) {
-    dest = [[NSMutableData alloc] initWithLength:0];
-  }
+
   [PBCodec encodeUInt32:(uint32_t) ((tag << 3) | value) dst:dest];
 }
 

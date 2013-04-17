@@ -2,32 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb3fa89f-fc37-494e-b287-09934961426e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protobuf.codec/PBCodec.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protobuf.codec/PBCodec.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protobuf.codec/PBDecoder.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protobuf.codec/PBDecoder.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protobuf.codec/PBEncoder.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protobuf.codec/PBEncoder.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protobuf.codec/PBHelper.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protobuf.codec/PBHelper.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/protobuf.codec.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/xcode.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/protobuf.codec/protobuf_codec.1" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protobuf.codec/PBCodec.h" afterPath="$PROJECT_DIR$/protobuf.codec/PBCodec.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protobuf.codec/PBCodec.m" afterPath="$PROJECT_DIR$/protobuf.codec/PBCodec.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protobuf.codec/PBDecoder.h" afterPath="$PROJECT_DIR$/protobuf.codec/PBDecoder.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protobuf.codec/PBDecoder.m" afterPath="$PROJECT_DIR$/protobuf.codec/PBDecoder.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protobuf.codec/PBEncoder.h" afterPath="$PROJECT_DIR$/protobuf.codec/PBEncoder.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protobuf.codec/PBEncoder.m" afterPath="$PROJECT_DIR$/protobuf.codec/PBEncoder.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protobuf.codec/main.m" afterPath="$PROJECT_DIR$/protobuf.codec/main.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protobuf.codec.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/protobuf.codec.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="protobuf.codec.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="eb3fa89f-fc37-494e-b287-09934961426e" time="1366043106884" ignored="false" />
-    <file path="/PBEncoder.m" changelist="eb3fa89f-fc37-494e-b287-09934961426e" time="1366060427736" ignored="false" />
-    <file path="/PBCodec.m" changelist="eb3fa89f-fc37-494e-b287-09934961426e" time="1366058526488" ignored="false" />
-    <file path="/main.m" changelist="eb3fa89f-fc37-494e-b287-09934961426e" time="1366050070777" ignored="false" />
+    <file path="/Dummy.txt" changelist="eb3fa89f-fc37-494e-b287-09934961426e" time="1366182089297" ignored="false" />
+    <file path="/PBEncoder.m" changelist="eb3fa89f-fc37-494e-b287-09934961426e" time="1366213038934" ignored="false" />
+    <file path="/PBCodec.m" changelist="eb3fa89f-fc37-494e-b287-09934961426e" time="1366189753134" ignored="false" />
+    <file path="/main.m" changelist="eb3fa89f-fc37-494e-b287-09934961426e" time="1366191931177" ignored="false" />
     <file path="/PBCodec.h" changelist="eb3fa89f-fc37-494e-b287-09934961426e" time="1366056728164" ignored="false" />
+    <file path="/PBDecoder.h" changelist="eb3fa89f-fc37-494e-b287-09934961426e" time="1366213448513" ignored="false" />
+    <file path="/PBDecoder.m" changelist="eb3fa89f-fc37-494e-b287-09934961426e" time="1366213426188" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,46 +39,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PBHelper.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protobuf.codec/PBHelper.m">
+      <file leaf-file-name="main.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protobuf.codec/main.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PBHelper.h" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protobuf.codec/PBHelper.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="38" selection-start="253" selection-end="253" vertical-scroll-proportion="0.3197492">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PBEncoder.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protobuf.codec/PBEncoder.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="285" column="8" selection-start="10038" selection-end="10038" vertical-scroll-proportion="0.0">
+            <state line="32" column="29" selection-start="734" selection-end="747" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#128#149#0" expanded="true" />
+                <element signature="e#123#156#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PBEncoder.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protobuf.codec/PBEncoder.h">
+      <file leaf-file-name="PBCodec.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protobuf.codec/PBCodec.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="42" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+            <state line="132" column="97" selection-start="3525" selection-end="3525" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PBDecoder.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protobuf.codec/PBDecoder.m">
+      <file leaf-file-name="PBCodec.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protobuf.codec/PBCodec.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="89" column="113" selection-start="2141" selection-end="2141" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PBHelper.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protobuf.codec/PBHelper.m">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -97,26 +80,43 @@
       <file leaf-file-name="PBDecoder.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protobuf.codec/PBDecoder.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="18" column="74" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PBCodec.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protobuf.codec/PBCodec.h">
+      <file leaf-file-name="PBDecoder.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protobuf.codec/PBDecoder.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="82" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="189" column="45" selection-start="5557" selection-end="5557" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#128#149#0" expanded="true" />
+                <element signature="n#setProtos:#0;n#PBDecoder#0" expanded="false" />
+                <element signature="n#protos#0;n#PBDecoder#0" expanded="false" />
+                <element signature="n#setOffset:#0;n#PBDecoder#0" expanded="false" />
+                <element signature="n#offset#0;n#PBDecoder#0" expanded="false" />
+                <element signature="n#loadProtos:#0;n#PBDecoder#0" expanded="false" />
+                <element signature="n#protos#1;n#PBDecoder#0" expanded="false" />
+                <element signature="n#getHead#0;n#PBDecoder#1" expanded="false" />
+                <element signature="n#getBytes:toBuffer:#0;n#PBDecoder#1" expanded="false" />
+                <element signature="n#peekBytesToBuffer:#0;n#PBDecoder#1" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PBCodec.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protobuf.codec/PBCodec.m">
+      <file leaf-file-name="PBEncoder.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protobuf.codec/PBEncoder.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="46" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="90" column="26" selection-start="2378" selection-end="2378" vertical-scroll-proportion="0.1197411">
+              <folding>
+                <element signature="n#initialize#0;n#PBEncoder#0" expanded="false" />
+                <element signature="n#setProtos:#0;n#PBEncoder#0" expanded="false" />
+                <element signature="n#protos#0;n#PBEncoder#0" expanded="false" />
+                <element signature="n#loadProtos:#0;n#PBEncoder#0" expanded="false" />
+                <element signature="n#protos#1;n#PBEncoder#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,18 +139,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protobuf.codec/main.m" />
-        <option value="$PROJECT_DIR$/protobuf.codec/PBCodec.m" />
+        <option value="$PROJECT_DIR$/protobuf.codec/PBEncoder.h" />
         <option value="$PROJECT_DIR$/protobuf.codec/PBCodec.h" />
+        <option value="$PROJECT_DIR$/protobuf.codec/PBCodec.m" />
+        <option value="$PROJECT_DIR$/protobuf.codec/main.m" />
         <option value="$PROJECT_DIR$/protobuf.codec/PBEncoder.m" />
+        <option value="$PROJECT_DIR$/protobuf.codec/PBDecoder.h" />
+        <option value="$PROJECT_DIR$/protobuf.codec/PBDecoder.m" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="43" />
     <option name="y" value="22" />
-    <option name="width" value="1237" />
-    <option name="height" value="760" />
+    <option name="width" value="1877" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -247,10 +250,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
-    <property name="options.searchVisible" value="true" />
+    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Application.protobuf.codec">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PROJECT_NAME="protobuf.codec" TARGET_NAME="protobuf.codec" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="protobuf.codec" RUN_TARGET_NAME="protobuf.codec" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -293,28 +297,48 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="22" width="1237" height="760" extended-state="0" />
+    <frame x="43" y="22" width="1877" height="1058" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="143" y="122" width="1037" height="560" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25440806" sideWeight="0.6711712" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32780084" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32987553" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973032" sideWeight="0.6701245" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16504854" sideWeight="0.6721992" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32780084" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="143" y="122" width="1037" height="560" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -378,76 +402,28 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Security.framework/Headers/cssmconfig.h">
+    <entry file="file://$PROJECT_DIR$/protobuf.codec/PBHelper.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="17" selection-start="1814" selection-end="1814" vertical-scroll-proportion="0.3328">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSJSONSerialization.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="6" selection-start="2882" selection-end="2882" vertical-scroll-proportion="0.91871923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protobuf.codec/main.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="8" selection-start="684" selection-end="1241" vertical-scroll-proportion="0.26968974">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protobuf.codec/PBCodec.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="82" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.0">
+        <state line="14" column="5" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protobuf.codec/PBCodec.m">
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Security.framework/Headers/cssmconfig.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="46" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="66" column="17" selection-start="1814" selection-end="1814" vertical-scroll-proportion="0.3328" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protobuf.codec/PBDecoder.h">
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSJSONSerialization.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protobuf.codec/PBDecoder.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protobuf.codec/PBEncoder.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="42" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protobuf.codec/PBEncoder.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="285" column="8" selection-start="10038" selection-end="10038" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#128#149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protobuf.codec/PBHelper.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="49" column="6" selection-start="2882" selection-end="2882" vertical-scroll-proportion="0.91871923" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protobuf.codec/protobuf.codec-Prefix.pch">
@@ -459,8 +435,97 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protobuf.codec/PBHelper.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="38" selection-start="253" selection-end="253" vertical-scroll-proportion="0.3197492">
+        <state line="11" column="0" selection-start="182" selection-end="182" vertical-scroll-proportion="0.23981191">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="8" selection-start="2128" selection-end="2128" vertical-scroll-proportion="0.33261105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protobuf.codec/PBEncoder.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="39" selection-start="235" selection-end="235" vertical-scroll-proportion="0.21794872">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protobuf.codec/PBCodec.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="113" selection-start="2141" selection-end="2141" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protobuf.codec/PBCodec.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="97" selection-start="3525" selection-end="3525" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSData.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="12" selection-start="2759" selection-end="2759" vertical-scroll-proportion="0.3322314">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protobuf.codec/main.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="29" selection-start="734" selection-end="747" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#123#156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protobuf.codec/PBHelper.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protobuf.codec/PBDecoder.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="74" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protobuf.codec/PBDecoder.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="189" column="45" selection-start="5557" selection-end="5557" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#128#149#0" expanded="true" />
+            <element signature="n#setProtos:#0;n#PBDecoder#0" expanded="false" />
+            <element signature="n#protos#0;n#PBDecoder#0" expanded="false" />
+            <element signature="n#setOffset:#0;n#PBDecoder#0" expanded="false" />
+            <element signature="n#offset#0;n#PBDecoder#0" expanded="false" />
+            <element signature="n#loadProtos:#0;n#PBDecoder#0" expanded="false" />
+            <element signature="n#protos#1;n#PBDecoder#0" expanded="false" />
+            <element signature="n#getHead#0;n#PBDecoder#1" expanded="false" />
+            <element signature="n#getBytes:toBuffer:#0;n#PBDecoder#1" expanded="false" />
+            <element signature="n#peekBytesToBuffer:#0;n#PBDecoder#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protobuf.codec/PBEncoder.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="26" selection-start="2378" selection-end="2378" vertical-scroll-proportion="0.1197411">
+          <folding>
+            <element signature="n#initialize#0;n#PBEncoder#0" expanded="false" />
+            <element signature="n#setProtos:#0;n#PBEncoder#0" expanded="false" />
+            <element signature="n#protos#0;n#PBEncoder#0" expanded="false" />
+            <element signature="n#loadProtos:#0;n#PBEncoder#0" expanded="false" />
+            <element signature="n#protos#1;n#PBEncoder#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

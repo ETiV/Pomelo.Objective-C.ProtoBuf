@@ -81,7 +81,11 @@
   //log("encodeFloat: %@", dst);
 }
 
-+ (float)decodeFloat:(NSData *)data {
++ (float)decodeFloat:(NSData *)data from:(NSUInteger)offset {
+  if (data == nil || data.length < (offset + 4)) {
+    return 0.0;
+  }
+
   union u {
     float f;
     int32_t i;
@@ -103,7 +107,10 @@
   //log("encodeDouble: %@", dst);
 }
 
-+ (double)decodeDouble:(NSData *)data {
++ (double)decodeDouble:(NSData *)data from:(NSUInteger)offset {
+  if (data == nil || data.length < (offset + 8)) {
+    return 0.0;
+  }
   union u {
     double d;
     int64_t i;
@@ -122,8 +129,8 @@
   //log("encodeStr: %@", dst);
 }
 
-+ (void)decodeStr:(NSData *)data dst:(NSMutableString *)dst {
-  [dst setString:[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]];
++ (void)decodeStr:(NSData *)data dst:(NSMutableString *)dst from:(NSUInteger)offset withLength:(NSUInteger)length {
+  [dst setString:[[NSString alloc] initWithData:[data subdataWithRange:NSMakeRange(offset, length)] encoding:NSUTF8StringEncoding]];
   //log("decodeStr: %@", dst);
 }
 

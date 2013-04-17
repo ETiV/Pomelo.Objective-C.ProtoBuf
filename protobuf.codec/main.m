@@ -28,6 +28,14 @@ int main(int argc, const char * argv[])
         // insert code here...
         NSLog(@"Hello, World!");
 
+        NSArray *test = [NSArray array];
+
+      if ([test isKindOfClass:[NSArray class]]) {
+        log("YES");
+      } else {
+        log("NO");
+      }
+
 //      NSDictionary *_handShakeData_Sys = [[NSDictionary alloc] initWithObjectsAndKeys:
 //          WS_CLIENT_VALUE_TYPE, WS_CLIENT_KEY_TYPE,
 //          WS_CLIENT_VALUE_VERSION, WS_CLIENT_KEY_VERSION, nil];

@@ -73,21 +73,21 @@ typedef enum {
  */
 + (void)encodeFloat:(float)n dst:(NSMutableData *)dst;
 
-+ (float)decodeFloat:(NSData *)data;
++ (float)decodeFloat:(NSData *)data from:(NSUInteger)offset;
 
 /**
  * double
  */
 + (void)encodeDouble:(double)n dst:(NSMutableData *)dst;
 
-+ (double)decodeDouble:(NSData *)data;
++ (double)decodeDouble:(NSData *)data from:(NSUInteger)offset;
 
 /**
  * string
  */
 + (void)encodeStr:(NSString *)str dst:(NSMutableData *)dst from:(NSUInteger)offset;
 
-+ (void)decodeStr:(NSData *)data dst:(NSMutableString *)dst;
++ (void)decodeStr:(NSData *)data dst:(NSMutableString *)dst from:(NSUInteger)offset withLength:(NSUInteger)length;
 
 + (unsigned long)byteLength:(NSString *)str;
 
