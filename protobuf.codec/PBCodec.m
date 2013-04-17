@@ -63,7 +63,7 @@
 + (int32_t)decodeSInt32:(NSData *)data {
   // even number means source number is >= 0
   // odd number means source number is < 0
-  uint32 n = [PBCodec decodeUInt32:data];
+  uint32_t n = [PBCodec decodeUInt32:data];
   bool isOddNumber = (bool) (n & 0x1);
   n >>= 1;
   //log("decodeSInt32: %d", ( (isOddNumber) ? (-1 * (n + 1)) : (n) ));

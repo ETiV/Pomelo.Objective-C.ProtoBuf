@@ -96,7 +96,7 @@ private)
 }
 
 #pragma mark - decode
-+ (void)decodeMsgWithRoute:(NSString *)route andData:(NSMutableData *)data toMsg:(NSMutableDictionary *)msg {
++ (void)decodeMsgWithRoute:(NSString *)route andData:(NSData *)data toMsg:(NSMutableDictionary *)msg {
   if (msg == nil) {
     msg = [NSMutableDictionary dictionary];
   }

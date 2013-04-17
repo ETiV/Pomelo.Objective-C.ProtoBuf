@@ -11,6 +11,6 @@
 @interface PBEncoder : NSObject
 
 + (void)loadProtos:(NSDictionary *)protos;
-+ (void)encodeMsg:(NSDictionary *)msg withRoute:(NSString *)route toBuffer:(NSMutableData *)dest;
++ (void)encodeMsgWithRoute:(NSString *)route andMsg:(NSDictionary *)msg toBuffer:(NSMutableData *)dest;
 
 @end

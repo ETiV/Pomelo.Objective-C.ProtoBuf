@@ -74,7 +74,7 @@ private)
 }
 
 #pragma mark - encode
-+ (void)encodeMsg:(NSDictionary *)msg withRoute:(NSString *)route toBuffer:(NSMutableData *)dest {
++ (void)encodeMsgWithRoute:(NSString *)route andMsg:(NSDictionary *)msg toBuffer:(NSMutableData *)dest {
   if (dest == nil) {
     dest = [NSMutableData data];
   }

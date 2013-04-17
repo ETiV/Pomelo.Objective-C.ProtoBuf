@@ -16,7 +16,7 @@ typedef struct _PBHead_ {
 @interface PBDecoder : NSObject
 
 + (void)loadProtos:(NSDictionary *)protos;
-+ (void)decodeMsgWithRoute:(NSString *)route andData:(NSMutableData *)data toMsg:(NSMutableDictionary *)msg;
++ (void)decodeMsgWithRoute:(NSString *)route andData:(NSData *)data toMsg:(NSMutableDictionary *)msg;
 
 @end
 
